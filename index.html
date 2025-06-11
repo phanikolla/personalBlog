@@ -3,54 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="favicon.png"> 
+  <meta name="description" content="Personal blog of Phani Kumar - Exploring Tech & Innovation">
+  <link rel="icon" type="image/png" href="favicon.png">
   <title>Phanikumar - Personal Website</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Libre+Baskerville:wght@400&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <div class="container">
     <!-- Sidebar -->
-    <aside class="sidebar">
-      <img src="avatar.jpg" alt="Phanikumar" class="profile-img">
+    <aside class="sidebar" role="complementary">
+      <img src="avatar.jpg" alt="Phani Kumar's profile picture" class="profile-img" width="180" height="180">
       <h2 class="name">Phani Kumar</h2>
       <p class="tagline">Exploring Tech & Innovation</p>
       
-      <hr class="top-line">
-      <nav>
+      <nav aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <hr>
+          <li><a href="#" aria-current="page">Home</a></li>
           <li><a href="resume.html">Profile</a></li>
-          <hr>
-          <li><a href="#">Blog</a></li>
-          <hr>
+          <li><a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7272227315034550272" target="_blank" rel="noopener noreferrer"><i class="fas fa-newspaper" aria-hidden="true" style="margin-right: 8px;"></i>Blog</a></li>
           <li><a href="mailto:pkkolla24@gmail.com">Contact</a></li>
         </ul>
       </nav>
-      <hr class="bottom-line">
 
-<!-- Social Media Icons -->
-        <div class="social-icons">
-            <a href="https://github.com/phanikolla" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/phanikumarkolla/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/PhaniKumarKolla" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
+      <div class="social-icons" aria-label="Social media links">
+        <a href="https://github.com/phanikolla" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/phanikumarkolla/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://x.com/PhaniKumarKolla" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </div>
     </aside>
 
     <!-- Main Content -->
-    <main class="main-content">
-      <h1>Welcome to My Personal Website</h1>
-      <p>🚀 This space will soon be filled with my thoughts and insights on:</p>
-      <ul class="topics">
-        <li>🔹 System Design & Software Architecture</li>
-        <li>🔹 Artificial Intelligence & Machine Learning</li>
-        <li>🔹 Generative AI and Future Tech</li>
-      </ul>
-      <p>Stay tuned for exciting content and deep-dive articles! 🎯</p>
+    <main class="main-content" role="main">
+      <h1>Welcome to My Digital Space</h1>
+      <p>I'm passionate about technology and innovation, sharing insights and experiences in the ever-evolving world of software development and artificial intelligence.</p>
+      
+      <section class="topics-section">
+        <h2>What I Write About</h2>
+        <ul class="topics">
+          <li>
+            <i class="fas fa-code-branch" aria-hidden="true"></i>
+            System Design & Software Architecture
+          </li>
+          <li>
+            <i class="fas fa-brain" aria-hidden="true"></i>
+            Artificial Intelligence & Machine Learning
+          </li>
+          <li>
+            <i class="fas fa-robot" aria-hidden="true"></i>
+            Generative AI and Future Tech
+          </li>
+        </ul>
+      </section>
+
+      <section class="cta-section">
+        <p>Stay tuned for exciting content and deep-dive articles! 🎯</p>
+        <a href="mailto:pkkolla24@gmail.com" class="cta-button">Get in Touch</a>
+      </section>
     </main>
   </div>
+
+  <!-- Mobile Navigation Toggle -->
+  <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span class="hamburger"></span>
+  </button>
+
+  <!-- Simple JavaScript for mobile navigation -->
+  <script>
+    document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+      document.querySelector('.sidebar').classList.toggle('active');
+      this.setAttribute('aria-expanded', 
+        this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
+      );
+    });
+  </script>
 </body>
 </html>
