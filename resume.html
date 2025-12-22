@@ -5,339 +5,412 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Julius+Sans+One&family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <style>
+    .page-break { page-break-before: always; }
+    
+    .rightPanel h2 {
+      margin-top: 0.35cm;
+      margin-bottom: 0.15cm;
+      border-bottom: 0.05cm solid #484444;
+      padding-bottom: 0.08cm;
+      font-size: 0.45cm;
+      letter-spacing: 0.03cm;
+    }
+    
+    /* Key Highlights Section */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.25cm;
+      margin: 0.25cm 0;
+      padding: 0.2cm;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 0.15cm;
+    }
+    .highlight-item {
+      text-align: center;
+      padding: 0.15cm;
+    }
+    .highlight-number {
+      font-size: 0.55cm;
+      font-weight: bold;
+      color: #484444;
+      display: block;
+    }
+    .highlight-label {
+      font-size: 0.28cm;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.02cm;
+    }
+    
+    /* Certification Badges - Real Images */
+    .cert-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25cm;
+      margin-top: 0.15cm;
+      justify-content: flex-start;
+    }
+    .cert-badge {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 0.1cm;
+      padding: 0.1cm 0.15cm;
+    }
+    .cert-badge img {
+      width: 1cm;
+      height: 1cm;
+      object-fit: contain;
+    }
+    .cert-badge-text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.1cm;
+    }
+    .cert-badge-title {
+      font-size: 0.26cm;
+      font-weight: bold;
+      color: #333;
+      line-height: 1.2;
+    }
+    .cert-badge-year {
+      font-size: 0.22cm;
+      color: #666;
+    }
+    
+    /* Core Strengths Tags */
+    .strength-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.12cm;
+      margin-top: 0.1cm;
+    }
+    .strength-tag {
+      background: #f0f0f0;
+      color: #484444;
+      padding: 0.08cm 0.18cm;
+      border-radius: 0.08cm;
+      font-size: 0.3cm;
+      font-weight: 500;
+    }
+    
+    .leftPanel .item:last-child { padding-bottom: 0; }
+    .page2-left { padding-top: 0.7cm; }
+    .page2-right { padding-top: 0.7cm; }
+    
+    /* Compact work experience */
+    .workExperience > ul > li { padding-bottom: 0.35cm; }
+    .workExperience .smallText ul { margin-top: 0.1cm; margin-bottom: 0.1cm; }
+    .workExperience .smallText ul li { margin-bottom: 0.08cm; line-height: 1.35; }
+    
+    /* Section subheadings */
+    .section-subhead {
+      font-weight: bold;
+      color: #484444;
+      font-size: 0.32cm;
+      margin: 0.12cm 0 0.08cm 0;
+      padding-left: 0.1cm;
+      border-left: 0.08cm solid #484444;
+    }
+    
+    /* Tech tags inline */
+    .tech-stack {
+      margin-top: 0.1cm;
+      padding: 0.1cm;
+      background: #fafafa;
+      border-radius: 0.08cm;
+    }
+    .tech-stack span.bolded { color: #484444; }
+  </style>
 </head>
 
 <body>
+  <!-- PAGE 1 -->
   <page size="A4">
     <div class="container">
       <div class="leftPanel">
         <img src="avatar1.jpg" />
         <div class="details">
           <div class="item bottomLineSeparator">
-            <h2>
-              CONTACT
-            </h2>
+            <h2>CONTACT</h2>
             <div class="smallText">
-              <p>
-                <i class="fa fa-phone contactIcon" aria-hidden="true"></i>
-                (+91) 910 066 0046
-              </p>
-              <p>
-                <i class="fa fa-envelope contactIcon" aria-hidden="true"></i>
-                <a href="mailto:pkkolla24@gmail.com">
-                  pkkolla24@gmail.com
-                </a>
-              </p>
-              <p>
-                <i class="fa fa-map-marker contactIcon" aria-hidden="true"></i>
-                Hyderabad, India
-              </p>
-              <p>
-                <i class="fa fa-linkedin-square contactIcon" aria-hidden="true"></i>
-                <a href="https://www.linkedin.com/in/phanikumarkolla/">
-                  in/phanikumarkolla
-                </a>
-              </p>
-              <p>
-                <i class="fa fa-github contactIcon" aria-hidden="true"></i>
-                <a href="https://github.com/phanikolla">
-                  github.com/phanikolla
-                </a>
-              </p>
+              <p><i class="fa fa-phone contactIcon" aria-hidden="true"></i>(+91) 910 066 0046</p>
+              <p><i class="fa fa-envelope contactIcon" aria-hidden="true"></i><a href="mailto:pkkolla24@gmail.com">pkkolla24@gmail.com</a></p>
+              <p><i class="fa fa-map-marker contactIcon" aria-hidden="true"></i>Hyderabad, India</p>
+              <p><i class="fa fa-linkedin-square contactIcon" aria-hidden="true"></i><a href="https://www.linkedin.com/in/phanikumarkolla/">in/phanikumarkolla</a></p>
+              <p><i class="fa fa-github contactIcon" aria-hidden="true"></i><a href="https://github.com/phanikolla">github.com/phanikolla</a></p>
             </div>
           </div>
           <div class="item bottomLineSeparator">
-            <h2>
-              SKILLS
-            </h2>
+            <h2>CORE COMPETENCIES</h2>
             <div class="smallText">
-              <div class="skill">
-                <div>
-                  <span>Cloud Architecture </span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Microservices</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>API/ Platform Design</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Distributed Systems</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Architecture Governance</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Modernization Strategy</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Java / Spring Boot</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Kubernetes & Docker</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>CI/CD (Jenkins, AWS CodePipeline)</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>IaC (CloudFormation) </span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Observability (ELK Stack)</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Technical Roadmaps</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Design Reviews</span>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div>
-                  <span>Security Best Practices</span>
-                </div>
-              </div>
-
+              <div class="skill"><span>Cloud Architecture (AWS/Azure)</span></div>
+              <div class="skill"><span>Microservices & Distributed Systems</span></div>
+              <div class="skill"><span>Architecture Governance</span></div>
+              <div class="skill"><span>Modernization Strategy</span></div>
+              <div class="skill"><span>API & Platform Design</span></div>
+              <div class="skill"><span>Domain-Driven Design</span></div>
+              <div class="skill"><span>FinOps & Cost Optimization</span></div>
+              <div class="skill"><span>DevOps & CI/CD</span></div>
+              <div class="skill"><span>Technical Roadmapping</span></div>
+              <div class="skill"><span>Stakeholder Management</span></div>
+            </div>
+          </div>
+          <div class="item bottomLineSeparator">
+            <h2>TECHNOLOGIES</h2>
+            <div class="smallText">
+              <p class="bolded white">Cloud & Infrastructure</p>
+              <p>AWS, Azure, Kubernetes, Docker, Terraform, CloudFormation</p>
+              <p class="bolded white" style="margin-top: 0.2cm;">Development</p>
+              <p>Java, Spring Boot, Python, Node.js, REST APIs</p>
+              <p class="bolded white" style="margin-top: 0.2cm;">DevOps & Observability</p>
+              <p>Jenkins, GitHub Actions, ELK Stack, CloudWatch</p>
             </div>
           </div>
           <div class="item">
-            <h2>
-              EDUCATION
-            </h2>
+            <h2>EDUCATION</h2>
             <div class="smallText">
-              <p class="bolded white">
-                Post Grad in AI and ML
-              </p>
-              <p>
-                BITS Pilani, Hyderabad, India
-              </p>
-              <p>
-                2021 - 2023
-              </p>
+              <p class="bolded white">PG Diploma in AI & ML</p>
+              <p>BITS Pilani | 2021-2023</p>
             </div>
-            <div class="smallText">
-              <p class="bolded white">
-                Bachelor of Technology in Computer Science
-              </p>
-              <p>
-                JNTU, Hyderabad, India
-              </p>
-              <p>
-                2007 - 2011
-              </p>
+            <div class="smallText" style="margin-top: 0.25cm;">
+              <p class="bolded white">B.Tech Computer Science</p>
+              <p>JNTU Hyderabad | 2007-2011</p>
             </div>
           </div>
         </div>
-
       </div>
       <div class="rightPanel">
         <div>
-          <h1>
-            PHANI KUMAR
-          </h1>
+          <h1>PHANI KUMAR KOLLA</h1>
           <div class="smallText">
-            <h3>
-               SOLUTIONS ARCHITECT (AWS + Azure)
-            </h3>
+            <h3>SENIOR SOLUTIONS ARCHITECT</h3>
           </div>
         </div>
+        
+        <!-- Key Highlights -->
+        <div class="highlights">
+          <div class="highlight-item">
+            <span class="highlight-number">13+</span>
+            <span class="highlight-label">Years Experience</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">12K</span>
+            <span class="highlight-label">Claims/Day Platform</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">66%</span>
+            <span class="highlight-label">Latency Reduction</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">99.95%</span>
+            <span class="highlight-label">Availability SLA</span>
+          </div>
+        </div>
+
+        <!-- Certification Badges -->
         <div>
-          <h2>
-            About me
-          </h2>
-          <div class="smallText">
-            <p>
-              Solutions Architect and Lead Engineer with 13+ years building enterprise platforms and 5+ years owning architecture for distributed, microservices-based systems in regulated environments. Designed and modernized high-volume workloads on cloud, improving throughput and cycle times (e.g., ~12k claims/day platform; 66% faster claim creation; 2× productivity) while establishing architecture governance and reducing technical debt. Partner closely with product, risk/compliance, and engineering leaders to translate business requirements into secure, reliable, cost-aware architectures aligned to well-architected principles.
-            </p>
+          <h2>Certifications</h2>
+          <div class="cert-badges">
+            <div class="cert-badge">
+              <img src="AWS_SolutionsArchitect.png?v=4" alt="AWS Solutions Architect" />
+              <div class="cert-badge-text">
+                <span class="cert-badge-title">AWS Solutions Architect</span>
+                <span class="cert-badge-year">Associate • 2025</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <img src="Togaf_badge.png?v=4" alt="TOGAF 9 Certified" />
+              <div class="cert-badge-text">
+                <span class="cert-badge-title">TOGAF® 9 Certified</span>
+                <span class="cert-badge-year">Enterprise Arch • 2023</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <img src="AzureAZ900badge.png?v=4" alt="Azure Fundamentals" />
+              <div class="cert-badge-text">
+                <span class="cert-badge-title">Azure Fundamentals</span>
+                <span class="cert-badge-year">Microsoft • 2023</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <img src="azure-ai-fundamentals-600x600.png?v=4" alt="Azure AI Fundamentals" />
+              <div class="cert-badge-text">
+                <span class="cert-badge-title">Azure AI Fundamentals</span>
+                <span class="cert-badge-year">Microsoft • 2023</span>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div>
+          <h2>Professional Summary</h2>
+          <div class="smallText">
+            <p>Solutions Architect with 13+ years designing enterprise-grade cloud solutions and microservices platforms. Expert in translating complex business requirements into secure, scalable architectures aligned to AWS Well-Architected and Azure CAF frameworks. Proven track record owning end-to-end architecture lifecycle—from strategic vision and ADRs to implementation and operational handover.</p>
+          </div>
+          <div class="strength-tags">
+            <span class="strength-tag">Architecture Governance</span>
+            <span class="strength-tag">Cloud Migration</span>
+            <span class="strength-tag">Technical Leadership</span>
+            <span class="strength-tag">Stakeholder Alignment</span>
+            <span class="strength-tag">Risk Mitigation</span>
+          </div>
+        </div>
+
         <div class="workExperience">
-          <h2>
-            Work experience
-          </h2>
+          <h2>Professional Experience</h2>
           <ul>
             <li>
               <div class="jobPosition">
-                <span class="bolded">
-                  Lead Software Engineer/ Solutions Architect
-                </span>
-                <span>
-                  Feb 2022 - Present
-                </span>
+                <span class="bolded">Lead Software Engineer / Solutions Architect</span>
+                <span>Feb 2022 - Present</span>
               </div>
               <div class="projectName bolded">
-                <span>
-                  Disputes Automated Tracking | WellsFargo
-                </span>
+                <span>Wells Fargo | Disputes Automated Tracking (DAT)</span>
               </div>
               <div class="smallText">
+                <p class="section-subhead">Architecture & Modernization</p>
                 <ul>
-                  <li>
-                    Architected and re-engineered a high-volume claim processing platform (~12k claims/day) using Spring Boot microservices on AWS, reducing claim creation time by 66% and doubling banker productivity.
-                  </li>
-                  <li>
-                    Established architecture governance (standards, design reviews, reusable patterns), aligning solutions to enterprise expectations and reducing technical debt by 40%.
-                  </li>
-                  <li>
-                    Owned modernization roadmap and migration strategy for legacy components, prioritizing initiatives based on business impact and cost optimization goals.
-                  </li>
-                  <li>
-                    Mentored teams on system design, DevOps practices, and cloud adoption to improve delivery predictability and operational quality.
-                  </li>
+                  <li>Architected high-volume platform (~12K claims/day) using Spring Boot microservices on AWS—reduced latency by 66%, doubled banker productivity</li>
+                  <li>Established architecture governance framework with standards, design reviews, and ADRs—reduced technical debt by 40%</li>
+                  <li>Owned cloud migration strategy; delivered multi-phased roadmap for data migration and service decomposition</li>
                 </ul>
-                <p>
-                  <span class="bolded">Technologies: </span>Java/Spring Boot, Microservices/Distributed Systems, AWS (S3, Lambda, RDS, CloudFormation), Kubernetes, Docker, API management.
-                </p>
-              </div>
-            </li>
-
-
-            <li>
-              <div class="jobPosition">
-                <span class="bolded">
-                  Senior Software Engineer
-                </span>
-                <span>
-                  Dec 2013 - Feb 2022
-                </span>
-              </div>
-              <div class="projectName bolded">
-                <span>
-                  Disputes Automated Tracking | WellsFargo
-                </span>
-              </div>
-              <div class="smallText">
+                <p class="section-subhead">Platform & Operations</p>
                 <ul>
-                  <li>
-                    <p>
-                      Built automated CI/CD pipelines (Jenkins, AWS CodePipeline), reducing release time by 40% and cutting deployment failures by 25%.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Implemented observability dashboards (Elasticsearch, Kibana), improving stability and reducing critical incidents by 30%.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Improved quality via automated testing and code review standards, reducing post-release defects by 35%.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      Contributed to microservices development and cloud migration initiatives supporting platform scale and reliability goals.
-                    </p>
-                  </li>
+                  <li>Designed security/compliance patterns for regulated environments (SOX, audit controls, data residency)</li>
+                  <li>Implemented ELK observability stack—reduced critical incidents by 30%, MTTR by 45%</li>
+                  <li>Led resilience initiatives: HA patterns, circuit breakers, DR strategies—achieved 99.95% SLA</li>
                 </ul>
-                <p>
-                  <span class="bolded">Technologies: </span> Java/Spring Boot, Jenkins/uDeploy, ELK, Docker, AWS ECS/EKS, Terraform.
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <div class="jobPosition">
-                <span class="bolded">
-                  Software Engineer
-                </span>
-                <span>
-                  Oct 2011 - Dec 2013
-                </span>
-              </div>
-              <div class="projectName bolded">
-                <span>
-                  eCustoms | E2Open
-                </span>
-              </div>
-              <div class="smallText">
+                <p class="section-subhead">Technical Leadership</p>
                 <ul>
-                  <li>
-                    Delivered features for a supply-chain application in Java/Spring MVC and contributed to documentation/UML for design discussions.
-                  </li>
-                  
+                  <li>Mentored 8+ engineers across platform, data, and infrastructure on system design and cloud adoption</li>
+                  <li>Led architecture design sessions and PoCs to validate high-risk technical assumptions</li>
                 </ul>
-                <p>
-                  <span class="bolded">Technologies: </span>Core Java, Spring MVC, JSP/Servlets, UML, unit testing.
-                </p>
+                <div class="tech-stack">
+                  <span class="bolded">Stack: </span>Java, Spring Boot, AWS (S3, Lambda, RDS, DynamoDB, CloudFormation), Kubernetes, Docker, API Gateway, SQS/SNS, Event-driven patterns
+                </div>
               </div>
             </li>
           </ul>
         </div>
-        <div class="certifications">
-          <h2>
-            Certifications
-          </h2>
+      </div>
+    </div>
+  </page>
+
+
+  <!-- PAGE 2 -->
+  <page size="A4" class="page-break">
+    <div class="container">
+      <div class="leftPanel page2-left">
+        <div class="details">
+          <div class="item bottomLineSeparator">
+            <h2>AWS SERVICES</h2>
+            <div class="smallText">
+              <p>CloudFormation, S3, Lambda, RDS, DynamoDB, API Gateway, CloudFront, VPC, IAM, CodePipeline, ECS, EKS, SQS, SNS, CloudWatch</p>
+            </div>
+          </div>
+          <div class="item bottomLineSeparator">
+            <h2>AZURE SERVICES</h2>
+            <div class="smallText">
+              <p>App Service, Azure DevOps, Monitor, Virtual Networks, Identity & Access Management</p>
+            </div>
+          </div>
+          <div class="item bottomLineSeparator">
+            <h2>ARCHITECTURE</h2>
+            <div class="smallText">
+              <div class="skill"><span>Well-Architected Reviews</span></div>
+              <div class="skill"><span>Design Reviews & ADRs</span></div>
+              <div class="skill"><span>NFRs Assessment</span></div>
+              <div class="skill"><span>Cloud-Native Patterns</span></div>
+              <div class="skill"><span>Event-Driven Design</span></div>
+              <div class="skill"><span>Service Mesh</span></div>
+              <div class="skill"><span>PoC Development</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <h2>KEY ACHIEVEMENTS</h2>
+            <div class="smallText">
+              <p class="bolded white">Platform Scale</p>
+              <p>12,000 claims processed daily</p>
+              <p class="bolded white" style="margin-top: 0.2cm;">Performance</p>
+              <p>66% latency reduction</p>
+              <p class="bolded white" style="margin-top: 0.2cm;">Reliability</p>
+              <p>99.95% availability SLA</p>
+              <p class="bolded white" style="margin-top: 0.2cm;">Quality</p>
+              <p>40% technical debt reduction</p>
+              <p class="bolded white" style="margin-top: 0.2cm;">Operations</p>
+              <p>30% fewer incidents, 45% faster MTTR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightPanel page2-right">
+        <div class="workExperience">
+          <h2 style="margin-top: 0;">Professional Experience (Continued)</h2>
           <ul>
             <li>
+              <div class="jobPosition">
+                <span class="bolded">Senior Software Engineer</span>
+                <span>Dec 2013 - Feb 2022</span>
+              </div>
+              <div class="projectName bolded">
+                <span>Wells Fargo | Disputes Automated Tracking (DAT)</span>
+              </div>
               <div class="smallText">
-                <p>
-                  AWS Certified Solutions Architect – Associate (2025)
-                </p>
+                <ul>
+                  <li>Built CI/CD pipelines (Jenkins, AWS CodePipeline)—reduced release cycle from weeks to days, cut deployment failures by 25%</li>
+                  <li>Deployed ELK observability infrastructure with real-time dashboards—reduced critical incidents by 30%</li>
+                  <li>Led cloud migration: decomposed monolith into microservices on AWS ECS/EKS—migrated 10+ services</li>
+                  <li>Drove quality improvements via automated testing and code review standards—reduced defects by 35%</li>
+                  <li>Mentored junior engineers on design patterns and cloud-native best practices</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="bolded">Stack: </span>Java, Spring Boot, Jenkins, ELK, Docker, AWS (ECS, EKS, Lambda, RDS), Terraform, Kubernetes
+                </div>
               </div>
             </li>
+
             <li>
-              <div class="smallText">
-                <p>
-                  The Open Group Certified: TOGAF® 9 Certified (2023)
-                </p>
+              <div class="jobPosition">
+                <span class="bolded">Software Engineer</span>
+                <span>Oct 2011 - Dec 2013</span>
               </div>
-            </li>
-            <li>
-              <div class="smallText">
-                <p>
-                  Microsoft Certified: Azure AI Fundamentals (2023)
-                </p>
+              <div class="projectName bolded">
+                <span>E2Open | eCustoms (Supply Chain Platform)</span>
               </div>
-            </li>
-            <li>
               <div class="smallText">
-                <p>
-                  Microsoft Certified: Azure Fundamentals (2023)
-                </p>
+                <ul>
+                  <li>Delivered features for supply-chain platform supporting multi-country regulatory compliance</li>
+                  <li>Contributed to system design documentation, UML diagrams, and architecture discussions</li>
+                  <li>Built unit and integration tests; participated in code reviews and quality initiatives</li>
+                </ul>
+                <div class="tech-stack">
+                  <span class="bolded">Stack: </span>Java, Spring MVC, JSP/Servlets, JPA/Hibernate, Oracle SQL, JUnit
+                </div>
               </div>
             </li>
           </ul>
+        </div>
+
+        <!-- Additional Value Section -->
+        <div>
+          <h2>Architecture Expertise</h2>
+          <div class="strength-tags" style="margin-top: 0.15cm;">
+            <span class="strength-tag">Enterprise Architecture</span>
+            <span class="strength-tag">Cloud Migration</span>
+            <span class="strength-tag">Microservices</span>
+            <span class="strength-tag">Event-Driven Architecture</span>
+            <span class="strength-tag">API Design</span>
+            <span class="strength-tag">Security & Compliance</span>
+            <span class="strength-tag">High Availability</span>
+            <span class="strength-tag">Disaster Recovery</span>
+            <span class="strength-tag">Cost Optimization</span>
+            <span class="strength-tag">Performance Engineering</span>
+          </div>
         </div>
       </div>
     </div>
